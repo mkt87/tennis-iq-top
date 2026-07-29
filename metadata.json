@@ -1,0 +1,6 @@
+{
+  "name": "大人のテニスIQ戦略 LP",
+  "description": "「今の技術のまま」テニスエリートに勝つ！大人のテニスIQ戦略 ランディングページ",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
