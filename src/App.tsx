@@ -5,6 +5,7 @@ import thought1Img from './assets/images/thought1_strategy_1785059057734.jpg';
 import thought2Img from './assets/images/thought2_v2_1785059500000_1785059573690.jpg';
 import thought3Img from './assets/images/thought3_ifthen_1785059088536.jpg';
 import thought4Img from './assets/images/thought4_business_1785059230552.jpg';
+import profileImg from './assets/images/profile.png';
 
 export default function App() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -296,19 +297,28 @@ export default function App() {
           <h2 className="text-2xl sm:text-3xl font-bold text-amber-400 font-serif border-b border-slate-800 pb-4">
             講師プロフィール
           </h2>
-          <div className="space-y-4 flex-1">
-            <div className="text-xl sm:text-2xl font-bold text-white text-center sm:text-left">
-              長谷川 誠（48歳）
+          <div className="flex flex-col sm:flex-row gap-8 items-center sm:items-start">
+            <div className="w-48 h-48 sm:w-56 sm:h-56 shrink-0 rounded-full border-4 border-amber-500/30 shadow-xl overflow-hidden flex items-center justify-center bg-slate-800">
+              <img 
+                src={profileImg} 
+                alt="長谷川 誠" 
+                className="w-full h-full object-cover"
+              />
             </div>
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              軟式上がり・片手バックハンド・社会人になってからは「週1練習」の、どこにでもいる普通のおじさんプレーヤー。
-            </p>
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              2019年の県シングルス1回戦、前年チャンピオンのテニスコーチ相手に、ギャラリーの前で惨めなボロ負けをしたことをきっかけに、見栄やプライドを捨てて【テニスIQ】を徹底的に磨く。
-            </p>
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              その結果、プレースタイルを変えたり、新しい技術を身につけたりすることなく、相手のミスを引き出す「大人のズルい戦い方」だけで、44歳を過ぎてから急にベテランの県チャンピオンに。
-            </p>
+            <div className="space-y-4 flex-1">
+              <div className="text-xl sm:text-2xl font-bold text-white text-center sm:text-left">
+                長谷川 誠（48歳）
+              </div>
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                軟式上がり・片手バックハンド・社会人になってからは「週1練習」の、どこにでもいる普通のおじさんプレーヤー。
+              </p>
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                2019年の県シングルス1回戦、前年チャンピオンのテニスコーチ相手に、ギャラリーの前で惨めなボロ負けをしたことをきっかけに、見栄やプライドを捨てて【テニスIQ】を徹底的に磨く。
+              </p>
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                その結果、プレースタイルを変えたり、新しい技術を身につけたりすることなく、相手のミスを引き出す「大人のズルい戦い方」だけで、44歳を過ぎてから急にベテランの県チャンピオンに。
+              </p>
+            </div>
           </div>
         </div>
 
