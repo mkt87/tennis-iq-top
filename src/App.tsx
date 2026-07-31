@@ -5,6 +5,7 @@ import thought1Img from './assets/images/thought1_strategy_1785059057734.jpg';
 import thought2Img from './assets/images/thought2_v2_1785059500000_1785059573690.jpg';
 import thought3Img from './assets/images/thought3_ifthen_1785059088536.jpg';
 import thought4Img from './assets/images/thought4_business_1785059230552.jpg';
+import profileImg from './assets/images/profile.png';
 
 export default function App() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -296,19 +297,28 @@ export default function App() {
           <h2 className="text-2xl sm:text-3xl font-bold text-amber-400 font-serif border-b border-slate-800 pb-4">
             講師プロフィール
           </h2>
-          <div className="space-y-4">
-            <div className="text-xl sm:text-2xl font-bold text-white">
-              長谷川 誠（48歳）
+          <div className="flex flex-col sm:flex-row gap-8 items-center sm:items-start">
+            <div className="w-48 sm:w-56 shrink-0">
+              <img 
+                src={profileImg} 
+                alt="長谷川 誠" 
+                className="w-full h-auto rounded-full border-4 border-slate-800 shadow-xl object-cover aspect-square"
+              />
             </div>
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              軟式上がり・片手バックハンド・社会人になってからは「週1練習」の、どこにでもいる普通のおじさんプレーヤー。
-            </p>
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              2019年の県シングルス1回戦、前年チャンピオンのテニスコーチ相手に、ギャラリーの前で惨めなボロ負けをしたことをきっかけに、見栄やプライドを捨てて【テニスIQ】を徹底的に磨く。
-            </p>
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              その結果、プレースタイルを変えたり、新しい技術を身につけたりすることなく、相手のミスを引き出す「大人のズルい戦い方」だけで、44歳を過ぎてから急にベテランの県チャンピオンに。
-            </p>
+            <div className="space-y-4 flex-1">
+              <div className="text-xl sm:text-2xl font-bold text-white text-center sm:text-left">
+                長谷川 誠（48歳）
+              </div>
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                軟式上がり・片手バックハンド・社会人になってからは「週1練習」の、どこにでもいる普通のおじさんプレーヤー。
+              </p>
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                2019年の県シングルス1回戦、前年チャンピオンのテニスコーチ相手に、ギャラリーの前で惨めなボロ負けをしたことをきっかけに、見栄やプライドを捨てて【テニスIQ】を徹底的に磨く。
+              </p>
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                その結果、プレースタイルを変えたり、新しい技術を身につけたりすることなく、相手のミスを引き出す「大人のズルい戦い方」だけで、44歳を過ぎてから急にベテランの県チャンピオンに。
+              </p>
+            </div>
           </div>
         </div>
 
@@ -612,7 +622,7 @@ export default function App() {
               href="https://www.youtube.com/@ojisan-tennis"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-slate-950/80 border border-slate-800 hover:border-amber-500/50 p-5 rounded-xl text-center space-y-2 transition-all hover:-translate-y-0.5 group block"
+              className="bg-slate-950/80 border border-slate-800 hover:border-amber-500/50 p-5 rounded-xl text-center transition-all hover:-translate-y-0.5 group flex items-center justify-center min-h-[72px]"
             >
               <div className="flex items-center justify-center gap-2 text-white font-bold text-lg">
                 <svg className="w-6 h-6 text-red-500 fill-current shrink-0" viewBox="0 0 24 24">
@@ -620,15 +630,12 @@ export default function App() {
                 </svg>
                 <span>YouTube</span>
               </div>
-              <div className="text-slate-400 text-xs font-mono group-hover:text-slate-300">
-                @ojisan-tennis
-              </div>
             </a>
             <a
               href="https://note.com/hasegawa053"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-slate-950/80 border border-slate-800 hover:border-amber-500/50 p-5 rounded-xl text-center space-y-2 transition-all hover:-translate-y-0.5 group block"
+              className="bg-slate-950/80 border border-slate-800 hover:border-amber-500/50 p-5 rounded-xl text-center transition-all hover:-translate-y-0.5 group flex items-center justify-center min-h-[72px]"
             >
               <div className="flex items-center justify-center gap-2 text-white font-bold text-lg">
                 <svg className="w-5 h-5 text-white fill-current shrink-0" viewBox="0 0 24 24">
@@ -636,23 +643,17 @@ export default function App() {
                 </svg>
                 <span>note</span>
               </div>
-              <div className="text-slate-400 text-xs font-mono group-hover:text-slate-300">
-                hasegawa053
-              </div>
             </a>
             <a
               href="https://x.com/ojisantennis"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-slate-950/80 border border-slate-800 hover:border-amber-500/50 p-5 rounded-xl text-center space-y-2 transition-all hover:-translate-y-0.5 group block"
+              className="bg-slate-950/80 border border-slate-800 hover:border-amber-500/50 p-5 rounded-xl text-center transition-all hover:-translate-y-0.5 group flex items-center justify-center min-h-[72px]"
             >
-              <div className="flex items-center justify-center gap-2 h-7">
-                <svg className="w-5 h-5 text-white fill-current shrink-0" viewBox="0 0 24 24">
+              <div className="flex items-center justify-center gap-2 text-white font-bold text-lg">
+                <svg className="w-6 h-6 text-white fill-current shrink-0" viewBox="0 0 24 24">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                 </svg>
-              </div>
-              <div className="text-slate-400 text-xs font-mono group-hover:text-slate-300">
-                @ojisantennis
               </div>
             </a>
           </div>
