@@ -5,7 +5,7 @@ import thought1Img from './assets/images/thought1_strategy_1785059057734.jpg';
 import thought2Img from './assets/images/thought2_v2_1785059500000_1785059573690.jpg';
 import thought3Img from './assets/images/thought3_ifthen_1785059088536.jpg';
 import thought4Img from './assets/images/thought4_business_1785059230552.jpg';
-import profileImg from './assets/images/profile.jpg';
+import profileImg from './assets/images/profile.png';
 
 export default function App() {
   const [isSubmitting, setIsSubmitting] = useState(false);
