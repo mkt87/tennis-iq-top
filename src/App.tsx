@@ -5,7 +5,7 @@ import thought1Img from './assets/images/thought1_strategy_1785059057734.jpg';
 import thought2Img from './assets/images/thought2_v2_1785059500000_1785059573690.jpg';
 import thought3Img from './assets/images/thought3_ifthen_1785059088536.jpg';
 import thought4Img from './assets/images/thought4_business_1785059230552.jpg';
-import profileImg from './assets/images/profile.png';
+import profileImg from './assets/images/profile.jpg';
 
 export default function App() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -298,12 +298,11 @@ export default function App() {
             講師プロフィール
           </h2>
           <div className="flex flex-col sm:flex-row gap-8 items-center sm:items-start">
-            <div className="w-48 sm:w-56 shrink-0">
+            <div className="w-48 h-48 sm:w-56 sm:h-56 shrink-0 rounded-full border-4 border-amber-500/30 shadow-xl overflow-hidden flex items-center justify-center bg-slate-800">
               <img 
                 src={profileImg} 
                 alt="長谷川 誠" 
-                referrerPolicy="no-referrer"
-                className="w-full h-auto rounded-full border-4 border-amber-500/30 shadow-xl object-cover aspect-square"
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="space-y-4 flex-1">
