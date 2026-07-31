@@ -302,7 +302,8 @@ export default function App() {
               <img 
                 src={profileImg} 
                 alt="長谷川 誠" 
-                className="w-full h-auto rounded-full border-4 border-slate-800 shadow-xl object-cover aspect-square"
+                referrerPolicy="no-referrer"
+                className="w-full h-auto rounded-full border-4 border-amber-500/30 shadow-xl object-cover aspect-square"
               />
             </div>
             <div className="space-y-4 flex-1">
