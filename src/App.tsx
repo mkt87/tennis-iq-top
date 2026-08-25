@@ -241,7 +241,7 @@ export default function App() {
             （オンライン完結）
           </div>
           <div className="text-2xl sm:text-3xl font-bold text-amber-300">
-            価格：138,000円（税込）
+            価格：198,000円（税込）
           </div>
           <div className="text-slate-300 text-sm sm:text-base leading-relaxed border-t border-slate-800 pt-4">
             内容：動画コンテンツ見放題、グループコンサルティング、個別戦略構築サポート（オンライン）、専用チャットでの無制限質問対応
@@ -260,7 +260,7 @@ export default function App() {
             （オンライン＋リアル直接指導）
           </div>
           <div className="text-2xl sm:text-3xl font-bold text-amber-300">
-            価格：198,000円（税込）
+            価格：268,000円（税込）
           </div>
           <div className="text-slate-300 text-sm sm:text-base leading-relaxed border-t border-slate-800 pt-4">
             内容：スタンダードコースの全内容に加え、月1回の浜松でのリアルレッスン（直接指導によるテニスIQの身体への落とし込み）
