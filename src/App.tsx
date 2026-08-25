@@ -6,6 +6,8 @@ import thought2Img from './assets/images/thought2_v2_1785059500000_1785059573690
 import thought3Img from './assets/images/thought3_ifthen_1785059088536.jpg';
 import thought4Img from './assets/images/thought4_business_1785059230552.jpg';
 import profileImg from './assets/images/profile.png';
+import maProfileImg from './assets/images/ma.jpg';
+import fuProfileImg from './assets/images/fu.jpg';
 
 export default function App() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -278,15 +280,59 @@ export default function App() {
         <h2 className="text-2xl sm:text-3xl font-bold text-amber-400 text-center font-serif">
           お客様の声
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="bg-slate-900 border border-slate-800 p-6 rounded-xl text-center text-slate-300 font-semibold shadow-md">
-            お客様の声1
+        <div className="space-y-6">
+          <div className="bg-slate-900 border border-slate-800 p-6 sm:p-8 rounded-xl shadow-lg relative">
+            <div className="text-amber-500/10 absolute top-4 right-6 text-8xl font-serif leading-none select-none">”</div>
+            <h3 className="text-xl sm:text-2xl font-bold text-amber-300 mb-6 pr-8 leading-relaxed relative z-10">
+              『勝つための戦略』でショットの使い所が分かるようになりました！
+            </h3>
+            
+            <div className="flex flex-col md:flex-row gap-6 relative z-10">
+              <div className="shrink-0 mx-auto md:mx-0">
+                <img 
+                  src={maProfileImg} 
+                  alt="M・A様" 
+                  className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full border-2 border-amber-500/30"
+                />
+              </div>
+              <div className="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+                <p>普段通っているテニススクールでは、自分が克服したいメニューをガッツリと練習できないことに物足りなさを感じていました。</p>
+                <p>そこで、ご自身も現役で試合に出場し、結果を出している長谷川さんなら「試合で勝つための具体的な戦略」を教えてもらえると思い参加を決めました。</p>
+                <p>実際にアドバイスを受けてみて、ただボールを綺麗に打つ練習ではなく、「この場面ではどう配球するか」というショットの使い所が明確にわかるようになってきました。</p>
+                <p>漠然とスクールに通うのではなく、「試合に勝ちたい」という明確な目的を持っている人には、間違いなくオススメしたいです！</p>
+              </div>
+            </div>
+            
+            <div className="mt-6 pt-4 border-t border-slate-800 flex justify-end relative z-10">
+              <span className="font-semibold text-slate-200">M・A様　女性</span>
+            </div>
           </div>
-          <div className="bg-slate-900 border border-slate-800 p-6 rounded-xl text-center text-slate-300 font-semibold shadow-md">
-            お客様の声2
-          </div>
-          <div className="bg-slate-900 border border-slate-800 p-6 rounded-xl text-center text-slate-300 font-semibold shadow-md">
-            お客様の声3
+
+          <div className="bg-slate-900 border border-slate-800 p-6 sm:p-8 rounded-xl shadow-lg relative">
+            <div className="text-amber-500/10 absolute top-4 right-6 text-8xl font-serif leading-none select-none">”</div>
+            <h3 className="text-xl sm:text-2xl font-bold text-amber-300 mb-6 pr-8 leading-relaxed relative z-10">
+              スクールのコーチに『そんなの教えてないよ！』と驚かれる、実戦で使えるパターンを習いました！
+            </h3>
+            
+            <div className="flex flex-col md:flex-row gap-6 relative z-10">
+              <div className="shrink-0 mx-auto md:mx-0">
+                <img 
+                  src={fuProfileImg} 
+                  alt="F・U様" 
+                  className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full border-2 border-amber-500/30"
+                />
+              </div>
+              <div className="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+                <p>ずっとフォアのストロークに悩んでいて、ダブルスの試合でもペアに任せっきりになってしまう状態からなんとか変わりたいと思っていました。</p>
+                <p>長谷川さんから学んで一番大きかったのは、通常のレッスンではなかなか聞くことができない「試合の中での具体的な動き方」を教えてもらえたことです。</p>
+                <p>教わったことを実際の試合でどんどんトライするようになるとプレーの幅が広がり、スクールのコーチからも「そんなパターン、レッスンでは教えていないよ！」と驚かれるくらい、実戦で使える戦術を身につけることができました。</p>
+                <p>試合に出始めたばかりで、「どうやったら勝てるのか（勝ち方）」がまだ分からないという人には、本当にオススメです。</p>
+              </div>
+            </div>
+            
+            <div className="mt-6 pt-4 border-t border-slate-800 flex justify-end relative z-10">
+              <span className="font-semibold text-slate-200">F・U様　女性</span>
+            </div>
           </div>
         </div>
       </section>
