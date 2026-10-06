@@ -6,6 +6,7 @@ import thought2Img from './assets/images/thought2_v2_1785059500000_1785059573690
 import thought3Img from './assets/images/thought3_ifthen_1785059088536.jpg';
 import thought4Img from './assets/images/thought4_business_1785059230552.jpg';
 import profileImg from './assets/images/profile.png';
+import imProfileImg from './assets/images/IM.png';
 import maProfileImg from './assets/images/ma.jpg';
 import fuProfileImg from './assets/images/fu.jpg';
 
@@ -281,6 +282,34 @@ export default function App() {
           お客様の声
         </h2>
         <div className="space-y-6">
+          <div className="bg-slate-900 border border-slate-800 p-6 sm:p-8 rounded-xl shadow-lg relative">
+            <div className="text-amber-500/10 absolute top-4 right-6 text-8xl font-serif leading-none select-none">”</div>
+            <h3 className="text-xl sm:text-2xl font-bold text-amber-300 mb-6 pr-8 leading-relaxed relative z-10">
+              「学生時代に習った常識を覆す戦術を教わり、テニスが一変しました」
+            </h3>
+            
+            <div className="flex flex-col md:flex-row gap-6 relative z-10">
+              <div className="shrink-0 mx-auto md:mx-0">
+                <img 
+                  src={imProfileImg} 
+                  alt="I・M様" 
+                  className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-full border-2 border-amber-500/30"
+                />
+              </div>
+              <div className="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+                <p>6年のブランクと体力不足で、少し動かされるだけでミスを連発し、すっかり自信を失っていました。YouTubeのレッスン動画を見ても「実際の試合でいつ使うか」が判断できず、コートでは全く実践できませんでした。</p>
+                <p>しかし、長谷川さんから「相手の配球を予測する戦略」や、「わざと短く打って有利に展開する」という学生時代に習った常識を覆す戦術を教わり、テニスが一変しました。</p>
+                <p>予測が立つことで動き出しが早くなり、諦めていた遠いボールにも届くようになったんです。心に余裕が生まれ、ミスも劇的に減りました。</p>
+                <p>今では仲間から「動けるようになったね！」と驚かれ、練習グループで一番になってやると思えるほど自信を取り戻しました。</p>
+                <p>試合でなかなか勝てず、壁を感じている方には本当にオススメです！</p>
+              </div>
+            </div>
+            
+            <div className="mt-6 pt-4 border-t border-slate-800 flex justify-end relative z-10">
+              <span className="font-semibold text-slate-200">I・M様　40代男性</span>
+            </div>
+          </div>
+
           <div className="bg-slate-900 border border-slate-800 p-6 sm:p-8 rounded-xl shadow-lg relative">
             <div className="text-amber-500/10 absolute top-4 right-6 text-8xl font-serif leading-none select-none">”</div>
             <h3 className="text-xl sm:text-2xl font-bold text-amber-300 mb-6 pr-8 leading-relaxed relative z-10">
